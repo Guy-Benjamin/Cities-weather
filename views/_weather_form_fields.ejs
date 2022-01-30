@@ -1,0 +1,24 @@
+<% city_output.forEach(city_data => { %>
+
+    <div class="card mt-3"> 
+        <div class="card-body">
+            <h3 class="card-title">Weather in  <%= city_data.city %></h3>
+            <h5 class="card-title">Time:</h5>
+            <div class="card-subtitle text-muted mb-2">
+                <%= city_data.Datetime %>
+            </div>
+            <h5 class="card-title">Conditions:</h5>
+            <div class="card-subtitle text-muted mb-2">
+                <%= city_data.description %>
+            </div>
+            <h5 class="card-title">Temperature (celsius):</h5>
+            <div class="card-subtitle text-muted mb-2">
+                <%= city_data.temperature %>
+            </div>
+            <h5 class="card-title">Humidity (%):</h5>
+            <div class="card-subtitle text-muted mb-2">
+                <%= city_data.humidity %>
+            </div>
+        </div> 
+    </div>
+<% }) %>
