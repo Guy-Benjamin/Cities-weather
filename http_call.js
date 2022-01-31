@@ -4,7 +4,7 @@ const http = require('http')
 const https = require('https')
 
 const target_cities = []
-target_cities.push('Prague','Jerusalem','Tokyo')
+target_cities.push('London','Tel Aviv','New York')
 
  
 const callExternalApi = (callback) => {
